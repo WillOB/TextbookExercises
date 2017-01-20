@@ -5,15 +5,14 @@ public class ExerciseThree {
 		Scanner reader = new Scanner(System.in);
 		System.out.println("How many numbers? >");
 		int N = reader.nextInt();
-		int count = 1;
+		int count;
 		double sum = 0;
 		double sqrSum = 0;
-		while (count <= N) {
+		for (count = 1; count <= N; count++) {
 			System.out.println("Enter a number. >");
 			double num = reader.nextDouble();
 			sum = sum + num;
 			sqrSum = sqrSum + num * num;
-			count++;
 		}
 		double avgSquare = sqrSum / N;
 		double avg = sum / N;

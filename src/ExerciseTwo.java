@@ -5,11 +5,10 @@ public class ExerciseTwo {
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Enter N");
 		int N = reader.nextInt();
-		int count = 1;
+		int count = 0;
 		double sum = 0.0;
-		while (count <= N){
+		for (count = 1; count <= N; count++){
 			sum = sum + 1.0 / count;
-			count++;
 		}
 		System.out.println("Sum is: " + sum);
 		
